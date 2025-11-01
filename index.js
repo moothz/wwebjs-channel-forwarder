@@ -29,7 +29,7 @@ const puppeteerOptions = {
     "--disable-features=InfiniteSessionRestore",
     "--window-name=channel-forwarder",
   ],
-  headless: false,
+  headless: true,
 };
 
 const client = new Client({
