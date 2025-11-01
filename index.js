@@ -1,6 +1,6 @@
-import { Client, LocalAuth } from "whatsapp-web.js";
-import qrcode from "qrcode-terminal";
-import "dotenv/config";
+const { Client, LocalAuth, version } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
+require('dotenv').config();
 
 // Settings
 const channelsWhitelist = process.env.CHANNELS_WHITELIST ? process.env.CHANNELS_WHITELIST.split(",") : [];
